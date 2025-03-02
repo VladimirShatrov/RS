@@ -26,7 +26,7 @@ namespace SocketTcpClient
 
 
                 string message = "";
-                Console.Write("stop - прекратить отправку сообщений");
+                Console.WriteLine("stop - прекратить отправку сообщений");
                 while (!message.Equals("stop"))
                 {
                     Console.WriteLine("Введите сообщение:");
@@ -52,7 +52,7 @@ namespace SocketTcpClient
 
                 // 5. Закрытие сокета
                 socket.Shutdown(SocketShutdown.Both); // отключение передачи и приема на сокет
-                socket.Close();  // закрываем сокет
+                socket.Close(); // закрываем сокет
             }
             catch (Exception ex)
             {
